@@ -18,6 +18,9 @@
     <provider>org.hibernate.ejb.HibernatePersistence</provider>
     <jta-data-source>java:jboss/datasources/policyDs</jta-data-source>
     
+    <class>org.acme.insurance.policyquote.Driver</class>
+    <class>org.acme.insurance.policyquote.Policy</class>
+    
     <properties>
       <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5Dialect" />
       <property name="hibernate.hbm2ddl.auto" value="create" />
