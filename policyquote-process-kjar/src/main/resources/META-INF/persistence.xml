@@ -14,7 +14,7 @@
              xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd
                       http://java.sun.com/xml/ns/persistence/orm http://java.sun.com/xml/ns/persistence/orm_2_0.xsd">
 
-  <persistence-unit name="org.acme.insurance.policyquote.domain">
+  <persistence-unit name="org.acme.insurance.policyquote.domain" transaction-type="JTA">
     <provider>org.hibernate.ejb.HibernatePersistence</provider>
     <jta-data-source>java:jboss/datasources/policyDs</jta-data-source>
     
@@ -22,6 +22,8 @@
       <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5Dialect" />
       <property name="hibernate.hbm2ddl.auto" value="create" />
       <property name="hibernate.show_sql" value="false" />
+      
+      <property name="hibernate.transaction.jta.platform" value="org.hibernate.service.jta.platform.internal.JBossAppServerJtaPlatform" />
     </properties>
   </persistence-unit>
 
