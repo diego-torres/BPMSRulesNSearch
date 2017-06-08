@@ -2,17 +2,32 @@ package org.acme.insurance.policyquote;
 
 import java.io.Serializable;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="driver")
 public class Driver implements Serializable {
     
     private static final long serialVersionUID = 1L;
     
+    @Id
     private String id;
+    @Column
     private String driverName;
+    @Column
     private Integer age;
+    @Column
     private String ssn;
+    @Column
     private String dlNumber;
+    @Column
     private Integer numberOfAccidents;
+    @Column
     private Integer numberOfTickets;
+    @Column
     private Integer creditScore;
     
     public Driver() {};

@@ -3,15 +3,27 @@ package org.acme.insurance.policyquote;
 import java.io.Serializable;
 import java.util.Date;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+@Entity
+@Table(name="policy")
 public class Policy implements Serializable {
     
     private static final long serialVersionUID = 1L;
     
+    @Column
     private Date requestDate;
+    @Column
     private String policyType;
+    @Column
     private Integer vehicleYear;
+    @Column
     private Integer price;
+    @Column
     private Integer priceDiscount;
+    @Id
     private String driver;
 
     public String toString() {
