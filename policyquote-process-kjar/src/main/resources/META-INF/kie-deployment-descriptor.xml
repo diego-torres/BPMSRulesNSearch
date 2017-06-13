@@ -9,6 +9,7 @@
         <marshalling-strategy>
             <resolver>mvel</resolver>
             <identifier>new org.drools.persistence.jpa.marshaller.JPAPlaceholderResolverStrategy("org.acme.insurance.policyquote.domain", classLoader)</identifier>
+            <parameters/>
         </marshalling-strategy>
     </marshalling-strategies>
     <event-listeners/>
@@ -39,9 +40,16 @@
             <parameters/>
             <name>Rest</name>
         </work-item-handler>
+        <work-item-handler>
+            <resolver>mvel</resolver>
+            <identifier>new org.acme.insurance.policyquote.wih.RulesWorkItemHandler("com.redhat.gpte.bpms-advanced:policyquote-calculation-kjar:LATEST")</identifier>
+            <parameters/>
+            <name>Rules</name>
+        </work-item-handler>
     </work-item-handlers>
     <environment-entries/>
     <configurations/>
     <required-roles/>
     <remoteable-classes/>
+    <limit-serialization-classes>false</limit-serialization-classes>
 </deployment-descriptor>
