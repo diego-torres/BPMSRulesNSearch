@@ -1,0 +1,13 @@
+package org.acme.recommendation_rules;
+
+import java.lang.Number;
+
+rule "Data Visualization with Tableau"
+	dialect "mvel"
+	when
+		Theres is a DataIngestion
+		- There is more than 10 developers
+		- There is more than 10 users
+	then
+		Add recommendation Tableau is a nice provider for more than 10 users. to CloudQuote
+end

@@ -1,0 +1,20 @@
+package org.acme.cloud_solution_projects;
+
+import java.lang.Number;
+
+rule "view-cloudSolution"
+	dialect "mvel"
+	ruleflow-group "view-rules"
+	no-loop true
+	when
+		project : Project( )
+		not (CloudSolution( )) 
+	then
+		ViewRecommendation view = new ViewRecommendation();
+		view.setRecommendation( "Enter the cloud solution characteristics" );
+		view.setViewName( "projects/" + project.id + "/cloud" );
+		insert( view );
+		modify( project ) {
+				setInformationCompleted( false )
+		}
+end

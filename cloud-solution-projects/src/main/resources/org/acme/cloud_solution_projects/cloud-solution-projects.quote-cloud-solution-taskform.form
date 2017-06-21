@@ -1,0 +1,331 @@
+
+<form id="57687480">
+<property name="name" value="cloud-solution-projects.quote-cloud-solution-taskform.form"/>
+<property name="displayMode" value="default"/>
+<property name="status" value="0"/>
+<field position="38" name="project_email" type="InputText" id="1301958810">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;email (project)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="project/email"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="37" name="oldProject_title" type="InputText" id="1678255498">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;title (oldProject)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="oldProject/title"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="36" name="oldProject_price" type="InputTextDouble" id="1340069276">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;price (oldProject)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="oldProject/price"/>
+<property name="fieldClass" value="java.lang.Double"/>
+</field>
+<field position="21" name="oldCloudSolution_locationCountry" type="InputText" id="1846931216">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;locationCountry (oldCloudSolution)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="oldCloudSolution/locationCountry"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="29" name="oldDataVisualization_id" type="InputTextLong" id="941374809">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;id (oldDataVisualization)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="oldDataVisualization/id"/>
+<property name="fieldClass" value="java.lang.Long"/>
+</field>
+<field position="2" name="cloudSolution_hasDataVisualization" type="CheckBox" id="262349668">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;hasDataVisualization (cloudSolution)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="cloudSolution/hasDataVisualization"/>
+<property name="fieldClass" value="java.lang.Boolean"/>
+</field>
+<field position="15" name="dataVisualization_preferredVisualizationTool" type="InputText" id="516141199">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;preferredVisualizationTool (dataVisualization)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="dataVisualization/preferredVisualizationTool"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="5" name="completed" type="InputText" id="551456848">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;completed (completed)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="completed"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="9" name="dataIngestion_licenseNumber" type="InputText" id="1553687243">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;licenseNumber (dataIngestion)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="dataIngestion/licenseNumber"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="14" name="dataVisualization_licenseNumber" type="InputText" id="936728324">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;licenseNumber (dataVisualization)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="dataVisualization/licenseNumber"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="44" name="viewRecommendation_viewName" type="InputText" id="633443090">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;viewName (viewRecommendation)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="viewRecommendation/viewName"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="23" name="oldDataIngestion_etlToolPreference" type="InputText" id="1480320815">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;etlToolPreference (oldDataIngestion)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="oldDataIngestion/etlToolPreference"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="18" name="oldCloudSolution_hasDataIngestion" type="CheckBox" id="1971123754">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;hasDataIngestion (oldCloudSolution)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="oldCloudSolution/hasDataIngestion"/>
+<property name="fieldClass" value="java.lang.Boolean"/>
+</field>
+<field position="41" name="project_price" type="InputTextDouble" id="1008411533">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;price (project)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="project/price"/>
+<property name="fieldClass" value="java.lang.Double"/>
+</field>
+<field position="35" name="oldProject_informationCompleted" type="CheckBox" id="1494401864">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;informationCompleted (oldProject)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="oldProject/informationCompleted"/>
+<property name="fieldClass" value="java.lang.Boolean"/>
+</field>
+<field position="33" name="oldProject_email" type="InputText" id="1044764254">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;email (oldProject)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="oldProject/email"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="1" name="cloudSolution_hasDataIngestion" type="CheckBox" id="395128081">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;hasDataIngestion (cloudSolution)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="cloudSolution/hasDataIngestion"/>
+<property name="fieldClass" value="java.lang.Boolean"/>
+</field>
+<field position="6" name="dataIngestion_developersQuantity" type="InputTextInteger" id="1881823543">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;developersQuantity (dataIngestion)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="dataIngestion/developersQuantity"/>
+<property name="fieldClass" value="java.lang.Integer"/>
+</field>
+<field position="10" name="dataIngestion_requiresLicense" type="CheckBox" id="1500460209">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;requiresLicense (dataIngestion)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="dataIngestion/requiresLicense"/>
+<property name="fieldClass" value="java.lang.Boolean"/>
+</field>
+<field position="22" name="oldDataIngestion_developersQuantity" type="InputTextInteger" id="988032250">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;developersQuantity (oldDataIngestion)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="oldDataIngestion/developersQuantity"/>
+<property name="fieldClass" value="java.lang.Integer"/>
+</field>
+<field position="13" name="dataVisualization_id" type="InputTextLong" id="330168626">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;id (dataVisualization)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="dataVisualization/id"/>
+<property name="fieldClass" value="java.lang.Long"/>
+</field>
+<field position="4" name="cloudSolution_locationCountry" type="InputText" id="1928719383">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;locationCountry (cloudSolution)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="cloudSolution/locationCountry"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="25" name="oldDataIngestion_licenseNumber" type="InputText" id="1848770710">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;licenseNumber (oldDataIngestion)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="oldDataIngestion/licenseNumber"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="3" name="cloudSolution_id" type="InputTextLong" id="958759938">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;id (cloudSolution)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="cloudSolution/id"/>
+<property name="fieldClass" value="java.lang.Long"/>
+</field>
+<field position="28" name="oldDataVisualization_endUsersQuantity" type="InputTextInteger" id="1874336912">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;endUsersQuantity (oldDataVisualization)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="oldDataVisualization/endUsersQuantity"/>
+<property name="fieldClass" value="java.lang.Integer"/>
+</field>
+<field position="34" name="oldProject_id" type="InputTextLong" id="1868964175">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;id (oldProject)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="oldProject/id"/>
+<property name="fieldClass" value="java.lang.Long"/>
+</field>
+<field position="19" name="oldCloudSolution_hasDataVisualization" type="CheckBox" id="1874316701">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;hasDataVisualization (oldCloudSolution)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="oldCloudSolution/hasDataVisualization"/>
+<property name="fieldClass" value="java.lang.Boolean"/>
+</field>
+<field position="40" name="project_informationCompleted" type="CheckBox" id="1633529271">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;informationCompleted (project)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="project/informationCompleted"/>
+<property name="fieldClass" value="java.lang.Boolean"/>
+</field>
+<field position="26" name="oldDataIngestion_requiresLicense" type="CheckBox" id="1564155671">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;requiresLicense (oldDataIngestion)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="oldDataIngestion/requiresLicense"/>
+<property name="fieldClass" value="java.lang.Boolean"/>
+</field>
+<field position="31" name="oldDataVisualization_preferredVisualizationTool" type="InputText" id="1327258800">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;preferredVisualizationTool (oldDataVisualization)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="oldDataVisualization/preferredVisualizationTool"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="7" name="dataIngestion_etlToolPreference" type="InputText" id="881237481">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;etlToolPreference (dataIngestion)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="dataIngestion/etlToolPreference"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="32" name="oldDataVisualization_requiresLicense" type="CheckBox" id="699518080">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;requiresLicense (oldDataVisualization)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="oldDataVisualization/requiresLicense"/>
+<property name="fieldClass" value="java.lang.Boolean"/>
+</field>
+<field position="24" name="oldDataIngestion_id" type="InputTextLong" id="52157225">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;id (oldDataIngestion)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="oldDataIngestion/id"/>
+<property name="fieldClass" value="java.lang.Long"/>
+</field>
+<field position="16" name="dataVisualization_requiresLicense" type="CheckBox" id="1551892236">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;requiresLicense (dataVisualization)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="dataVisualization/requiresLicense"/>
+<property name="fieldClass" value="java.lang.Boolean"/>
+</field>
+<field position="43" name="viewRecommendation_recommendation" type="InputText" id="2001975008">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;recommendation (viewRecommendation)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="viewRecommendation/recommendation"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="12" name="dataVisualization_endUsersQuantity" type="InputTextInteger" id="311979821">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;endUsersQuantity (dataVisualization)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="dataVisualization/endUsersQuantity"/>
+<property name="fieldClass" value="java.lang.Integer"/>
+</field>
+<field position="20" name="oldCloudSolution_id" type="InputTextLong" id="1026216479">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;id (oldCloudSolution)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="oldCloudSolution/id"/>
+<property name="fieldClass" value="java.lang.Long"/>
+</field>
+<field position="8" name="dataIngestion_id" type="InputTextLong" id="247820275">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;id (dataIngestion)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="dataIngestion/id"/>
+<property name="fieldClass" value="java.lang.Long"/>
+</field>
+<field position="42" name="project_title" type="InputText" id="390425586">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;title (project)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="project/title"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="11" name="dataVisualization_developersQuantity" type="InputTextInteger" id="1867347636">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;developersQuantity (dataVisualization)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="dataVisualization/developersQuantity"/>
+<property name="fieldClass" value="java.lang.Integer"/>
+</field>
+<field position="30" name="oldDataVisualization_licenseNumber" type="InputText" id="1101509726">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;licenseNumber (oldDataVisualization)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="oldDataVisualization/licenseNumber"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="39" name="project_id" type="InputTextLong" id="1589643577">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;id (project)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="project/id"/>
+<property name="fieldClass" value="java.lang.Long"/>
+</field>
+<field position="17" name="oldCloudSolution_cloudProvider" type="InputText" id="749751307">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;cloudProvider (oldCloudSolution)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="oldCloudSolution/cloudProvider"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="27" name="oldDataVisualization_developersQuantity" type="InputTextInteger" id="683007374">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;developersQuantity (oldDataVisualization)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="oldDataVisualization/developersQuantity"/>
+<property name="fieldClass" value="java.lang.Integer"/>
+</field>
+<field position="0" name="cloudSolution_cloudProvider" type="InputText" id="458455212">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;cloudProvider (cloudSolution)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="cloudSolution/cloudProvider"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<dataHolder inputId="" name="#B29FE4" type="dataModelerEntry" outId="cloudSolution" value="org.acme.cloud_solution_projects.CloudSolution" id="cloudSolution"/>
+<dataHolder inputId="" name="#0000A0" type="basicType" outId="completed" value="java.lang.String" id="completed"/>
+<dataHolder inputId="" name="#FF54A7" type="dataModelerEntry" outId="dataIngestion" value="org.acme.cloud_solution_projects.DataIngestion" id="dataIngestion"/>
+<dataHolder inputId="" name="#BBBBBB" type="dataModelerEntry" outId="dataVisualization" value="org.acme.cloud_solution_projects.DataVisualization" id="dataVisualization"/>
+<dataHolder inputId="" name="#000000" type="dataModelerEntry" outId="oldCloudSolution" value="org.acme.cloud_solution_projects.CloudSolution" id="oldCloudSolution"/>
+<dataHolder inputId="" name="#A7E690" type="dataModelerEntry" outId="oldDataIngestion" value="org.acme.cloud_solution_projects.DataIngestion" id="oldDataIngestion"/>
+<dataHolder inputId="" name="#FF8881" type="dataModelerEntry" outId="oldDataVisualization" value="org.acme.cloud_solution_projects.DataVisualization" id="oldDataVisualization"/>
+<dataHolder inputId="" name="#FBB767" type="dataModelerEntry" outId="oldProject" value="org.acme.cloud_solution_projects.Project" id="oldProject"/>
+<dataHolder inputId="" name="#E9E371" type="dataModelerEntry" outId="project" value="org.acme.cloud_solution_projects.Project" id="project"/>
+<dataHolder inputId="" name="#9BCAFA" type="dataModelerEntry" outId="viewRecommendation" value="org.acme.cloud_solution_projects.ViewRecommendation" id="viewRecommendation"/>
+</form>
