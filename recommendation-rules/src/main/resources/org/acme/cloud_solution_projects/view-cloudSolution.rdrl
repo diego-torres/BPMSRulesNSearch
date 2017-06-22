@@ -9,12 +9,12 @@ rule "view-cloudSolution"
 	when
 		project : Project( )
 		not (CloudSolution( )) 
+		view : ViewRecommendation( )
 	then
-		ViewRecommendation view = new ViewRecommendation();
-		view.setRecommendation( "Enter the cloud solution characteristics" );
-		view.setViewName( "projects/" + project.id + "/cloud" );
-		insert( view );
 		modify( project ) {
 				setInformationCompleted( false )
+		}
+		modify( view ) {
+				setViewName( "projects/" + project.id + "/cloud" )
 		}
 end
