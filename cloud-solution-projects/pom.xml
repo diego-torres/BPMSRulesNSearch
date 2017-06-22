@@ -17,7 +17,7 @@
   </repositories>
   <dependencies>
     <dependency>
-			<groupId>org.acme.cloud-solution/groupId>
+			<groupId>org.acme.cloud-solution</groupId>
 			<artifactId>cloud-solution-dto</artifactId>
 			<version>1.0</version>
 		</dependency>
