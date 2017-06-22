@@ -10,8 +10,8 @@
   <description>Add recommendation messages given the data input.</description>
   <dependencies>
     <dependency>
-      <groupId>org.acme</groupId>
-      <artifactId>cloud-quote-model</artifactId>
+      <groupId>org.acme.cloud-solution</groupId>
+      <artifactId>cloud-solution-dto</artifactId>
       <version>1.0</version>
     </dependency>
   </dependencies>

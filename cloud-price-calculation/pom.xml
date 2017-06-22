@@ -8,9 +8,9 @@
   <packaging>kjar</packaging>
   <name>cloud-price-calculation</name>
   <dependencies>
-    <dependency>
-      <groupId>org.acme</groupId>
-      <artifactId>cloud-quote-model</artifactId>
+	<dependency>
+      <groupId>org.acme.cloud-solution</groupId>
+      <artifactId>cloud-solution-dto</artifactId>
       <version>1.0</version>
     </dependency>
   </dependencies>
