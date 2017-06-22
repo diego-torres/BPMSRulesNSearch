@@ -12,27 +12,15 @@
     <work-item-handlers>
         <work-item-handler>
             <resolver>mvel</resolver>
-            <identifier>new org.jbpm.process.instance.impl.demo.SystemOutWorkItemHandler()</identifier>
+            <identifier>new org.acme.cloud_solution.wih.RulesWorkItemHanlder("org.acme:recommendation-rules:LATEST")</identifier>
             <parameters/>
-            <name>Log</name>
+            <name>ViewRules</name>
         </work-item-handler>
         <work-item-handler>
             <resolver>mvel</resolver>
-            <identifier>new org.jbpm.process.workitem.bpmn2.ServiceTaskHandler(ksession, classLoader)</identifier>
+            <identifier>new org.acme.cloud_solution.wih.RulesWorkItemHanlder("org.acme:cloud-price-calculation:LATEST")</identifier>
             <parameters/>
-            <name>Service Task</name>
-        </work-item-handler>
-        <work-item-handler>
-            <resolver>mvel</resolver>
-            <identifier>new org.jbpm.process.workitem.webservice.WebServiceWorkItemHandler(ksession, classLoader)</identifier>
-            <parameters/>
-            <name>WebService</name>
-        </work-item-handler>
-        <work-item-handler>
-            <resolver>mvel</resolver>
-            <identifier>new org.jbpm.process.workitem.rest.RESTWorkItemHandler(classLoader)</identifier>
-            <parameters/>
-            <name>Rest</name>
+            <name>PriceRules</name>
         </work-item-handler>
     </work-item-handlers>
     <environment-entries/>

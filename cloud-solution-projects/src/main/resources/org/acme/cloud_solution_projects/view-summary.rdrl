@@ -1,0 +1,21 @@
+package org.acme.cloud_solution_projects;
+
+import java.lang.Number;
+
+rule "view-summary"
+	dialect "mvel"
+	ruleflow-group "view-rules"
+	no-loop true
+	when
+		project : Project( )
+		DataVisualization( )
+		DataIngestion( )
+		CloudSolution( )
+	then
+		ViewRecommendation view = new ViewRecommendation();
+		view.setViewName( "projects/" + project.id + "/summary" );
+		insert( view );
+		modify( project ) {
+				setInformationCompleted( true )
+		}
+end
