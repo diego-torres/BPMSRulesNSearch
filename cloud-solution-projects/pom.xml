@@ -15,7 +15,7 @@
       <version>1.0</version>
     </dependency>
     <dependency>
-      <groupId>org.acme</groupId>
+      <groupId>org.acme.cloud-solution</groupId>
       <artifactId>cloud-rules-wih</artifactId>
       <version>1.0</version>
     </dependency>
