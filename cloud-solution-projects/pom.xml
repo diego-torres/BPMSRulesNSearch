@@ -15,6 +15,13 @@
       <url>http://localhost:8080/business-central/maven2/</url>
     </repository>
   </repositories>
+  <dependencies>
+    <dependency>
+			<groupId>org.acme.cloud-solution/groupId>
+			<artifactId>cloud-solution-dto</artifactId>
+			<version>1.0</version>
+		</dependency>
+  </dependencies>
   <build>
     <plugins>
       <plugin>
