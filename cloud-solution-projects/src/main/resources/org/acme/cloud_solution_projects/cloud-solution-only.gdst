@@ -112,7 +112,7 @@
     </Pattern52>
   </conditionPatterns>
   <actionCols>
-    <set-field-col52>
+    <insert-fact-column52>
       <typedDefaultValue>
         <valueString></valueString>
         <dataType>NUMERIC_DOUBLE</dataType>
@@ -121,11 +121,12 @@
       <hideColumn>false</hideColumn>
       <width>-1</width>
       <header>price</header>
+      <factType>Project</factType>
       <boundName>project</boundName>
       <factField>price</factField>
       <type>Double</type>
-      <update>false</update>
-    </set-field-col52>
+      <isInsertLogical>false</isInsertLogical>
+    </insert-fact-column52>
   </actionCols>
   <auditLog>
     <filter class="org.drools.guvnor.client.modeldriven.dt52.auditlog.DecisionTableAuditLogFilter">
