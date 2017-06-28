@@ -1,4 +1,4 @@
-package org.acme.cloud_solution_projects;
+package org.acme.recommendation_rules;
 
 import org.acme.cloud_solution_projects.Project;
 import org.acme.cloud_solution_projects.CloudSolution;
@@ -15,5 +15,5 @@ rule "TestProject"
         System.out.println("found project with no cloud solution");
         //actions
         modify($view) {setViewName("test from rule")};
-        
+
 end

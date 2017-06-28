@@ -1,13 +1,15 @@
-package org.acme.cloud_solution_projects;
+package org.acme.recommendation_rules;
 
-import java.lang.Number;
+import org.acme.cloud_solution_projects.Project;
+import org.acme.cloud_solution_projects.CloudSolution;
+import org.acme.cloud_solution_projects.ViewRecommendation;
 
 rule "view-project"
 	dialect "mvel"
 	no-loop true
 	ruleflow-group "view-rules"
 	when
-		not (Project( )) 
+		not (Project( ))
 	then
 		ViewRecommendation view = new ViewRecommendation();
 		view.setRecommendation( "Add Project information" );

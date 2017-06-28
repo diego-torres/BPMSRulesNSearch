@@ -1,6 +1,8 @@
 package org.acme.cloud_solution_projects;
 
-import java.lang.Number;
+import org.acme.cloud_solution_projects.Project;
+import org.acme.cloud_solution_projects.CloudSolution;
+import org.acme.cloud_solution_projects.ViewRecommendation;
 
 rule "view-dataVisualization"
 	dialect "mvel"
@@ -9,7 +11,7 @@ rule "view-dataVisualization"
 	when
 		project : Project( )
 		cloudSolution : CloudSolution( hasDataVisualization == true )
-		not (DataVisualization( )) 
+		not (DataVisualization( ))
 	then
 		ViewRecommendation view = new ViewRecommendation();
 		view.setRecommendation( "Please enter information about data visualization tool" );
