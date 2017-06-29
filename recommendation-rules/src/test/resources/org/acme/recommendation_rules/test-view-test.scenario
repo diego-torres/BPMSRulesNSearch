@@ -43,14 +43,11 @@
       <anonymous>true</anonymous>
     </expect-fact>
     <expect-rule>
-      <ruleName>TestProject</ruleName>
-      <explanation>Rule [TestProject] was not activated. Expected it to be activated.</explanation>
+      <ruleName>view-test</ruleName>
       <expectedFire>true</expectedFire>
-      <successResult>false</successResult>
-      <actualResult>0</actualResult>
     </expect-rule>
   </fixtures>
-  <lastRunResult>2017-06-29 13:51:32.771 UTC</lastRunResult>
+  <lastRunResult>2017-06-29 13:53:47.794 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>org.acme.recommendation_rules</packageName>
