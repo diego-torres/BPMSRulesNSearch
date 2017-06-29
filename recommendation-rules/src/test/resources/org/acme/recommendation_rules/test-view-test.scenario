@@ -65,6 +65,6 @@
     </imports>
   </imports>
   <ksessions>
-    <string>ksession.stateless</string>
+    <string>ksession.stateful</string>
   </ksessions>
 </scenario>
