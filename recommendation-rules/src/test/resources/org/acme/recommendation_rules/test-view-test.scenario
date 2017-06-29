@@ -20,8 +20,11 @@
       <name>fact_project</name>
       <isModify>false</isModify>
     </fact-data>
+    <org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
+      <name>view-rules</name>
+    </org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
     <execution-trace>
-      <executionTimeResult>1</executionTimeResult>
+      <executionTimeResult>2</executionTimeResult>
       <numberOfRulesFired>0</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
@@ -41,10 +44,13 @@
     </expect-fact>
     <expect-rule>
       <ruleName>view-test</ruleName>
+      <explanation>Rule [view-test] was not activated. Expected it to be activated.</explanation>
       <expectedFire>true</expectedFire>
+      <successResult>false</successResult>
+      <actualResult>0</actualResult>
     </expect-rule>
   </fixtures>
-  <lastRunResult>2017-06-29 13:53:47.794 UTC</lastRunResult>
+  <lastRunResult>2017-06-29 14:14:48.71 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>org.acme.recommendation_rules</packageName>
