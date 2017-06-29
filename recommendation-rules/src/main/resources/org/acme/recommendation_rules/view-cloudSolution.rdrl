@@ -6,7 +6,6 @@ import org.acme.cloud_solution_projects.ViewRecommendation;
 
 rule "view-cloudSolution"
 	dialect "mvel"
-	ruleflow-group "view-rules"
 	no-loop true
 	enabled true
 	when
