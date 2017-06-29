@@ -24,8 +24,8 @@
       <name>view-rules</name>
     </org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
     <execution-trace>
-      <executionTimeResult>2</executionTimeResult>
-      <numberOfRulesFired>0</numberOfRulesFired>
+      <executionTimeResult>13</executionTimeResult>
+      <numberOfRulesFired>1</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
       <fieldValues/>
@@ -34,10 +34,13 @@
     </expect-fact>
     <expect-rule>
       <ruleName>view-cloudSolution</ruleName>
+      <explanation>Rule [view-cloudSolution] was activated 1 times.</explanation>
       <expectedFire>true</expectedFire>
+      <successResult>true</successResult>
+      <actualResult>1</actualResult>
     </expect-rule>
   </fixtures>
-  <lastRunResult>2017-06-29 14:14:48.71 UTC</lastRunResult>
+  <lastRunResult>2017-06-29 14:18:55.734 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>org.acme.recommendation_rules</packageName>
