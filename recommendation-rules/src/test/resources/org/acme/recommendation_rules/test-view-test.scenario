@@ -23,6 +23,18 @@
     <org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
       <name>view-rules</name>
     </org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
+    <fact-data>
+      <type>ViewRecommendation</type>
+      <fieldData>
+        <field-data>
+          <name>viewName</name>
+          <value>project</value>
+          <nature>4</nature>
+        </field-data>
+      </fieldData>
+      <name>view</name>
+      <isModify>false</isModify>
+    </fact-data>
     <execution-trace>
       <executionTimeResult>13</executionTimeResult>
       <numberOfRulesFired>1</numberOfRulesFired>
