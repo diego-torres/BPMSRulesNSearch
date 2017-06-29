@@ -3,6 +3,7 @@ package org.acme.cloud_solution.wih;
 import java.util.Collection;
 
 import org.drools.compiler.kproject.ReleaseIdImpl;
+import org.drools.core.event.DebugAgendaEventListener;
 import org.kie.api.KieServices;
 import org.kie.api.builder.KieScanner;
 import org.kie.api.builder.ReleaseId;
@@ -10,11 +11,11 @@ import org.kie.api.definition.KiePackage;
 import org.kie.api.definition.rule.Rule;
 import org.kie.api.runtime.KieContainer;
 import org.kie.api.runtime.KieSession;
+import org.kie.api.runtime.process.ProcessInstance;
 import org.kie.api.runtime.process.WorkItem;
 import org.kie.api.runtime.process.WorkItemHandler;
 import org.kie.api.runtime.process.WorkItemManager;
 import org.kie.internal.runtime.Cacheable;
-import org.kie.api.runtime.process.ProcessInstance;
 
 public class RulesWorkItemHanlder implements WorkItemHandler, Cacheable {
 
@@ -58,6 +59,9 @@ public class RulesWorkItemHanlder implements WorkItemHandler, Cacheable {
 			System.out.println("using available kieSession");
 			kieSession = kieContainer.newKieSession(kieSessionName);
 		}
+		
+		kieSession.addEventListener(new DebugAgendaEventListener());
+		//kieSession.addEventListener(new DebugWorkingMemoryEventListener());
 
 		for (String param : workItem.getParameters().keySet()) {
 			if (param.startsWith("fact_")) {
