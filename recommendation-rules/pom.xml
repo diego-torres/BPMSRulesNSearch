@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.acme</groupId>
   <artifactId>recommendation-rules</artifactId>
-  <version>1.16</version>
+  <version>1.17</version>
   <packaging>kjar</packaging>
   <name>recommendation-rules</name>
   <description>Add recommendation messages given the data input.</description>
