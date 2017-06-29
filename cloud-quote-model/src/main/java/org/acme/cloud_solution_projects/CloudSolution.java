@@ -73,4 +73,10 @@ public class CloudSolution implements java.io.Serializable {
 		this.hasDataIngestion = hasDataIngestion;
 	}
 
+	@Override
+	public String toString() {
+		return "CloudSolution [id=" + id + ", cloudProvider=" + cloudProvider + ", locationCountry=" + locationCountry
+				+ ", hasDataVisualization=" + hasDataVisualization + ", hasDataIngestion=" + hasDataIngestion + "]";
+	}
+
 }

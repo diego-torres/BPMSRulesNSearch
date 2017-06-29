@@ -5,86 +5,78 @@ package org.acme.cloud_solution_projects;
  */
 
 @javax.persistence.Entity
-public class DataIngestion implements java.io.Serializable
-{
+public class DataIngestion implements java.io.Serializable {
 
-   static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-   @javax.persistence.GeneratedValue(strategy = javax.persistence.GenerationType.IDENTITY)
-   @javax.persistence.Id
-   private java.lang.Long id;
+	@javax.persistence.GeneratedValue(strategy = javax.persistence.GenerationType.IDENTITY)
+	@javax.persistence.Id
+	private java.lang.Long id;
 
-   private java.lang.Boolean requiresLicense;
+	private java.lang.Boolean requiresLicense;
 
-   private java.lang.String licenseNumber;
+	private java.lang.String licenseNumber;
 
-   private java.lang.String etlToolPreference;
+	private java.lang.String etlToolPreference;
 
-   private java.lang.Integer developersQuantity;
+	private java.lang.Integer developersQuantity;
 
-   public DataIngestion()
-   {
-   }
+	public DataIngestion() {
+	}
 
-   public java.lang.Long getId()
-   {
-      return this.id;
-   }
+	public java.lang.Long getId() {
+		return this.id;
+	}
 
-   public void setId(java.lang.Long id)
-   {
-      this.id = id;
-   }
+	public void setId(java.lang.Long id) {
+		this.id = id;
+	}
 
-   public java.lang.Boolean getRequiresLicense()
-   {
-      return this.requiresLicense;
-   }
+	public java.lang.Boolean getRequiresLicense() {
+		return this.requiresLicense;
+	}
 
-   public void setRequiresLicense(java.lang.Boolean requiresLicense)
-   {
-      this.requiresLicense = requiresLicense;
-   }
+	public void setRequiresLicense(java.lang.Boolean requiresLicense) {
+		this.requiresLicense = requiresLicense;
+	}
 
-   public java.lang.String getLicenseNumber()
-   {
-      return this.licenseNumber;
-   }
+	public java.lang.String getLicenseNumber() {
+		return this.licenseNumber;
+	}
 
-   public void setLicenseNumber(java.lang.String licenseNumber)
-   {
-      this.licenseNumber = licenseNumber;
-   }
+	public void setLicenseNumber(java.lang.String licenseNumber) {
+		this.licenseNumber = licenseNumber;
+	}
 
-   public java.lang.String getEtlToolPreference()
-   {
-      return this.etlToolPreference;
-   }
+	public java.lang.String getEtlToolPreference() {
+		return this.etlToolPreference;
+	}
 
-   public void setEtlToolPreference(java.lang.String etlToolPreference)
-   {
-      this.etlToolPreference = etlToolPreference;
-   }
+	public void setEtlToolPreference(java.lang.String etlToolPreference) {
+		this.etlToolPreference = etlToolPreference;
+	}
 
-   public java.lang.Integer getDevelopersQuantity()
-   {
-      return this.developersQuantity;
-   }
+	public java.lang.Integer getDevelopersQuantity() {
+		return this.developersQuantity;
+	}
 
-   public void setDevelopersQuantity(java.lang.Integer developersQuantity)
-   {
-      this.developersQuantity = developersQuantity;
-   }
+	public void setDevelopersQuantity(java.lang.Integer developersQuantity) {
+		this.developersQuantity = developersQuantity;
+	}
 
-   public DataIngestion(java.lang.Long id, java.lang.Boolean requiresLicense,
-         java.lang.String licenseNumber, java.lang.String etlToolPreference,
-         java.lang.Integer developersQuantity)
-   {
-      this.id = id;
-      this.requiresLicense = requiresLicense;
-      this.licenseNumber = licenseNumber;
-      this.etlToolPreference = etlToolPreference;
-      this.developersQuantity = developersQuantity;
-   }
+	public DataIngestion(java.lang.Long id, java.lang.Boolean requiresLicense, java.lang.String licenseNumber,
+			java.lang.String etlToolPreference, java.lang.Integer developersQuantity) {
+		this.id = id;
+		this.requiresLicense = requiresLicense;
+		this.licenseNumber = licenseNumber;
+		this.etlToolPreference = etlToolPreference;
+		this.developersQuantity = developersQuantity;
+	}
+
+	@Override
+	public String toString() {
+		return "DataIngestion [id=" + id + ", requiresLicense=" + requiresLicense + ", licenseNumber=" + licenseNumber
+				+ ", etlToolPreference=" + etlToolPreference + ", developersQuantity=" + developersQuantity + "]";
+	}
 
 }

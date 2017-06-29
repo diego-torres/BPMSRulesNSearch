@@ -5,102 +5,91 @@ package org.acme.cloud_solution_projects;
  */
 
 @javax.persistence.Entity
-public class DataVisualization implements java.io.Serializable
-{
+public class DataVisualization implements java.io.Serializable {
 
-   static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-   @javax.persistence.GeneratedValue(strategy = javax.persistence.GenerationType.IDENTITY)
-   @javax.persistence.Id
-   private java.lang.Long id;
+	@javax.persistence.GeneratedValue(strategy = javax.persistence.GenerationType.IDENTITY)
+	@javax.persistence.Id
+	private java.lang.Long id;
 
-   private java.lang.Boolean requiresLicense;
+	private java.lang.Boolean requiresLicense;
 
-   private java.lang.String licenseNumber;
+	private java.lang.String licenseNumber;
 
-   private java.lang.Integer endUsersQuantity;
+	private java.lang.Integer endUsersQuantity;
 
-   private java.lang.Integer developersQuantity;
+	private java.lang.Integer developersQuantity;
 
-   private java.lang.String preferredVisualizationTool;
+	private java.lang.String preferredVisualizationTool;
 
-   public DataVisualization()
-   {
-   }
+	public DataVisualization() {
+	}
 
-   public java.lang.Long getId()
-   {
-      return this.id;
-   }
+	public java.lang.Long getId() {
+		return this.id;
+	}
 
-   public void setId(java.lang.Long id)
-   {
-      this.id = id;
-   }
+	public void setId(java.lang.Long id) {
+		this.id = id;
+	}
 
-   public java.lang.Boolean getRequiresLicense()
-   {
-      return this.requiresLicense;
-   }
+	public java.lang.Boolean getRequiresLicense() {
+		return this.requiresLicense;
+	}
 
-   public void setRequiresLicense(java.lang.Boolean requiresLicense)
-   {
-      this.requiresLicense = requiresLicense;
-   }
+	public void setRequiresLicense(java.lang.Boolean requiresLicense) {
+		this.requiresLicense = requiresLicense;
+	}
 
-   public java.lang.String getLicenseNumber()
-   {
-      return this.licenseNumber;
-   }
+	public java.lang.String getLicenseNumber() {
+		return this.licenseNumber;
+	}
 
-   public void setLicenseNumber(java.lang.String licenseNumber)
-   {
-      this.licenseNumber = licenseNumber;
-   }
+	public void setLicenseNumber(java.lang.String licenseNumber) {
+		this.licenseNumber = licenseNumber;
+	}
 
-   public java.lang.Integer getEndUsersQuantity()
-   {
-      return this.endUsersQuantity;
-   }
+	public java.lang.Integer getEndUsersQuantity() {
+		return this.endUsersQuantity;
+	}
 
-   public void setEndUsersQuantity(java.lang.Integer endUsersQuantity)
-   {
-      this.endUsersQuantity = endUsersQuantity;
-   }
+	public void setEndUsersQuantity(java.lang.Integer endUsersQuantity) {
+		this.endUsersQuantity = endUsersQuantity;
+	}
 
-   public java.lang.Integer getDevelopersQuantity()
-   {
-      return this.developersQuantity;
-   }
+	public java.lang.Integer getDevelopersQuantity() {
+		return this.developersQuantity;
+	}
 
-   public void setDevelopersQuantity(java.lang.Integer developersQuantity)
-   {
-      this.developersQuantity = developersQuantity;
-   }
+	public void setDevelopersQuantity(java.lang.Integer developersQuantity) {
+		this.developersQuantity = developersQuantity;
+	}
 
-   public java.lang.String getPreferredVisualizationTool()
-   {
-      return this.preferredVisualizationTool;
-   }
+	public java.lang.String getPreferredVisualizationTool() {
+		return this.preferredVisualizationTool;
+	}
 
-   public void setPreferredVisualizationTool(
-         java.lang.String preferredVisualizationTool)
-   {
-      this.preferredVisualizationTool = preferredVisualizationTool;
-   }
+	public void setPreferredVisualizationTool(java.lang.String preferredVisualizationTool) {
+		this.preferredVisualizationTool = preferredVisualizationTool;
+	}
 
-   public DataVisualization(java.lang.Long id,
-         java.lang.Boolean requiresLicense, java.lang.String licenseNumber,
-         java.lang.Integer endUsersQuantity,
-         java.lang.Integer developersQuantity,
-         java.lang.String preferredVisualizationTool)
-   {
-      this.id = id;
-      this.requiresLicense = requiresLicense;
-      this.licenseNumber = licenseNumber;
-      this.endUsersQuantity = endUsersQuantity;
-      this.developersQuantity = developersQuantity;
-      this.preferredVisualizationTool = preferredVisualizationTool;
-   }
+	public DataVisualization(java.lang.Long id, java.lang.Boolean requiresLicense, java.lang.String licenseNumber,
+			java.lang.Integer endUsersQuantity, java.lang.Integer developersQuantity,
+			java.lang.String preferredVisualizationTool) {
+		this.id = id;
+		this.requiresLicense = requiresLicense;
+		this.licenseNumber = licenseNumber;
+		this.endUsersQuantity = endUsersQuantity;
+		this.developersQuantity = developersQuantity;
+		this.preferredVisualizationTool = preferredVisualizationTool;
+	}
+
+	@Override
+	public String toString() {
+		return "DataVisualization [id=" + id + ", requiresLicense=" + requiresLicense + ", licenseNumber="
+				+ licenseNumber + ", endUsersQuantity=" + endUsersQuantity + ", developersQuantity="
+				+ developersQuantity + ", preferredVisualizationTool=" + preferredVisualizationTool + "]";
+	}
 
 }
