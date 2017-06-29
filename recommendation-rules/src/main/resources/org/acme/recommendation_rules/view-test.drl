@@ -10,7 +10,6 @@ rule "TestProject"
 
     when
         $project : Project()
-        $view : ViewRecommendation()
     then
         System.out.println("found project with no cloud solution");
         //actions
