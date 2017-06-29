@@ -7,9 +7,10 @@ import org.acme.cloud_solution_projects.ViewRecommendation;
 rule "view-test"
 
     ruleflow-group "view-rules"
+    no-loop true
 
     when
-        $project : Project()
+        $project : Project(title != null)
     then
         System.out.println("found project with no cloud solution");
         //actions
