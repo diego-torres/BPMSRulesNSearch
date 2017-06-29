@@ -31,16 +31,23 @@
       <fieldValues>
         <expect-field>
           <fieldName>viewName</fieldName>
-          <expected>test</expected>
+          <expected>test from rule</expected>
+          <actualResult>No match</actualResult>
+          <successResult>false</successResult>
+          <explanation>Fact of type [ViewRecommendation] was not found in the results.</explanation>
           <operator>==</operator>
-          <nature>0</nature>
+          <nature>1</nature>
         </expect-field>
       </fieldValues>
       <name>ViewRecommendation</name>
       <anonymous>true</anonymous>
     </expect-fact>
+    <expect-rule>
+      <ruleName>TestProject</ruleName>
+      <expectedFire>true</expectedFire>
+    </expect-rule>
   </fixtures>
-  <lastRunResult>2017-06-29 13:48:36.592 UTC</lastRunResult>
+  <lastRunResult>2017-06-29 13:49:28.989 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>org.acme.recommendation_rules</packageName>
