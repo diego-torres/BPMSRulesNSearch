@@ -9,14 +9,13 @@ rule "view-cloudSolution"
 	ruleflow-group "view-rules"
 	no-loop true
 	when
-		project : Project( )
-		not (CloudSolution( ))
-		view : ViewRecommendation( )
+		project : Project( title != null )
+		not (CloudSolution( )) 
 	then
 		modify( project ) {
 				setInformationCompleted( false )
 		}
-		modify( view ) {
-				setViewName( "projects/" + project.id + "/cloud" )
-		}
+		ViewRecommendation view = new ViewRecommendation();
+		view.setViewName( "projects/" + project.id + "/cloud" );
+		insert( view );
 end
