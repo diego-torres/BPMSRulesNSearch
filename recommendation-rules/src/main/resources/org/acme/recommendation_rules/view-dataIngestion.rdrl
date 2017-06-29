@@ -9,10 +9,11 @@ rule "view-dataIngestion"
 	dialect "mvel"
 	ruleflow-group "view-rules"
 	no-loop true
+	enabled true
 	when
 		cloudSolution : CloudSolution( hasDataIngestion == true )
 		project : Project( )
-		not (DataIngestion( ))
+		not (DataIngestion( )) 
 	then
 		ViewRecommendation view = new ViewRecommendation();
 		view.setRecommendation( "Please enter the Data Ingestion Details" );
