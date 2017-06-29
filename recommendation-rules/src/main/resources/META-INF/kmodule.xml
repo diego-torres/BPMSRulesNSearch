@@ -1,6 +1,6 @@
 <kmodule xmlns="http://jboss.org/kie/6.0.0/kmodule" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <kbase name="kbase1" default="true" eventProcessingMode="stream" equalsBehavior="identity">
-    <ksession name="ksession.stateless" type="stateless" default="true" clockType="realtime"/>
-    <ksession name="ksession.stateful" type="stateful" default="false" clockType="realtime"/>
+    <ksession name="ksession.stateless" type="stateless" default="false" clockType="realtime"/>
+    <ksession name="ksession.stateful" type="stateful" default="true" clockType="realtime"/>
   </kbase>
 </kmodule>
