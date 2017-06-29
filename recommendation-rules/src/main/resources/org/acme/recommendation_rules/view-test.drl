@@ -15,7 +15,7 @@ rule "view-test"
         System.out.println("found project with no cloud solution");
         //actions
         ViewRecommendation view = new ViewRecommendation();
-		view.setViewName( "projects/" + project.id + "/cloud" );
+		view.setViewName( "projects/" + project.getId() + "/cloud" );
 		insert( view );
 
 end
