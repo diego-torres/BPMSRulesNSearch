@@ -43,11 +43,8 @@
       <anonymous>true</anonymous>
     </expect-fact>
     <expect-rule>
-      <ruleName>view-test</ruleName>
-      <explanation>Rule [view-test] was not activated. Expected it to be activated.</explanation>
+      <ruleName>view-cloudSolution</ruleName>
       <expectedFire>true</expectedFire>
-      <successResult>false</successResult>
-      <actualResult>0</actualResult>
     </expect-rule>
   </fixtures>
   <lastRunResult>2017-06-29 14:14:48.71 UTC</lastRunResult>
