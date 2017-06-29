@@ -3,14 +3,6 @@
     <repository>
       <include>true</include>
       <metadata>
-        <id>fuse-public</id>
-        <url>https://repository.jboss.org/nexus/content/groups/fs-public/</url>
-        <source>SETTINGS</source>
-      </metadata>
-    </repository>
-    <repository>
-      <include>true</include>
-      <metadata>
         <id>jboss</id>
         <url>http://repository.jboss.org/nexus/content/groups/public-jboss/</url>
         <source>SETTINGS</source>
@@ -27,17 +19,9 @@
     <repository>
       <include>true</include>
       <metadata>
-        <id>jboss-snapshot</id>
-        <url>http://repository.jboss.org/nexus/content/groups/public-jboss/</url>
-        <source>SETTINGS</source>
-      </metadata>
-    </repository>
-    <repository>
-      <include>true</include>
-      <metadata>
-        <id>jboss-enterprise</id>
-        <url>http://maven.repository.redhat.com/ga</url>
-        <source>SETTINGS</source>
+        <id>central</id>
+        <url>https://repo.maven.apache.org/maven2</url>
+        <source>PROJECT</source>
       </metadata>
     </repository>
     <repository>
@@ -59,16 +43,32 @@
     <repository>
       <include>true</include>
       <metadata>
-        <id>central</id>
-        <url>https://repo.maven.apache.org/maven2</url>
-        <source>PROJECT</source>
+        <id>jboss-plugins</id>
+        <url>http://repository.jboss.org/nexus/content/groups/public-jboss/</url>
+        <source>SETTINGS</source>
       </metadata>
     </repository>
     <repository>
       <include>true</include>
       <metadata>
-        <id>jboss-plugins</id>
+        <id>jboss-snapshot</id>
         <url>http://repository.jboss.org/nexus/content/groups/public-jboss/</url>
+        <source>SETTINGS</source>
+      </metadata>
+    </repository>
+    <repository>
+      <include>true</include>
+      <metadata>
+        <id>fuse-public</id>
+        <url>https://repository.jboss.org/nexus/content/groups/fs-public/</url>
+        <source>SETTINGS</source>
+      </metadata>
+    </repository>
+    <repository>
+      <include>true</include>
+      <metadata>
+        <id>jboss-enterprise</id>
+        <url>http://maven.repository.redhat.com/ga</url>
         <source>SETTINGS</source>
       </metadata>
     </repository>
