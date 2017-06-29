@@ -4,7 +4,7 @@ import org.acme.cloud_solution_projects.Project;
 import org.acme.cloud_solution_projects.CloudSolution;
 import org.acme.cloud_solution_projects.ViewRecommendation;
 
-rule "TestProject"
+rule "view-test"
 
     ruleflow-group "view-rules"
 
