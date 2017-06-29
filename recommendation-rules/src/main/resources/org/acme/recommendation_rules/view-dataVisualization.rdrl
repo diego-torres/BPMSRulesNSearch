@@ -1,17 +1,19 @@
-package org.acme.cloud_solution_projects;
+package org.acme.recommendation_rules;
 
 import org.acme.cloud_solution_projects.Project;
 import org.acme.cloud_solution_projects.CloudSolution;
 import org.acme.cloud_solution_projects.ViewRecommendation;
+import org.acme.cloud_solution_projects.DataVisualization;
 
 rule "view-dataVisualization"
 	dialect "mvel"
 	no-loop true
 	ruleflow-group "view-rules"
+	enabled true
 	when
 		project : Project( )
 		cloudSolution : CloudSolution( hasDataVisualization == true )
-		not (DataVisualization( ))
+		not (DataVisualization( )) 
 	then
 		ViewRecommendation view = new ViewRecommendation();
 		view.setRecommendation( "Please enter information about data visualization tool" );

@@ -10,6 +10,7 @@ rule "view-summary"
 	dialect "mvel"
 	ruleflow-group "view-rules"
 	no-loop true
+	enabled true
 	when
 		project : Project( )
 		DataVisualization( )
