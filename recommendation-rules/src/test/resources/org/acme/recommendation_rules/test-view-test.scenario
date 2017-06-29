@@ -20,9 +20,6 @@
       <name>fact_project</name>
       <isModify>false</isModify>
     </fact-data>
-    <org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
-      <name>view-rules</name>
-    </org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
     <fact-data>
       <type>ViewRecommendation</type>
       <fieldData>
