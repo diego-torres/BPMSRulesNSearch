@@ -9,7 +9,7 @@ rule "view-project"
 	no-loop true
 	ruleflow-group "view-rules"
 	when
-		not (Project( title != null )) 
+		not (Project( )) 
 	then
 		ViewRecommendation view = new ViewRecommendation();
 		view.setRecommendation( "Add Project information" );
