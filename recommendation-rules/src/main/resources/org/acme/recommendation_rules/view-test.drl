@@ -14,6 +14,8 @@ rule "view-test"
     then
         System.out.println("found project with no cloud solution");
         //actions
-        modify($view) {setViewName("test from rule")};
+        ViewRecommendation view = new ViewRecommendation();
+		view.setViewName( "projects/" + project.id + "/cloud" );
+		insert( view );
 
 end
