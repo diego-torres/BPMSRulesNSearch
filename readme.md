@@ -12,4 +12,4 @@ The purpose of this project is to provide a proof of concept in relation to an s
 6. Once the quote information is completed, the process engine will evaluate the received information through a second set of rules, giving a price and a summary screen for the user to approve the quote or make any modifications to it.
 7. If the user approves the quote the quote process ends.
 
-![Process Image](https://github.com/diego-torres/BPMSRulesNSearch/blob/master/cloud-solution-projects/src/main/resources/org/acme/cloud_solution_projects/cloud-solution-projects.quote-cloud-solution-svg.svg)
+![Process Image](cloud_solution_projects.quote-cloud-solution.png "cloud_solution_projects.quote-cloud-solution.png")
