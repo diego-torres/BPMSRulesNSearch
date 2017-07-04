@@ -11,8 +11,9 @@ rule "view-cloudSolution"
 	when
 		$project : Project( cloudSolution == null , $view : viewRecommendation != null )
 	then
-		modify( $project ) {
-				setInformationCompleted( false )
-		}
 		$view.setViewName( "projects/" + $project.id + "/cloud" );
+		modify( $project ) {
+				setInformationCompleted( false ), 
+				setViewRecommendation( $view )
+		}
 end
