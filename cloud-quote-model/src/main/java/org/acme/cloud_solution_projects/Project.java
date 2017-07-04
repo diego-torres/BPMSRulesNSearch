@@ -120,7 +120,9 @@ public class Project implements java.io.Serializable {
 	@Override
 	public String toString() {
 		return "Project [id=" + id + ", title=" + title + ", email=" + email + ", price=" + price
-				+ ", informationCompleted=" + informationCompleted + "]";
+				+ ", informationCompleted=" + informationCompleted + ", cloudSolution=" + cloudSolution
+				+ ", dataIngestion=" + dataIngestion + ", dataVisualization=" + dataVisualization
+				+ ", viewRecommendation=" + viewRecommendation + "]";
 	}
 
 }
