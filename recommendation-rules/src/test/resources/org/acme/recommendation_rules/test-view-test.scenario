@@ -16,13 +16,26 @@
           <value>test project</value>
           <nature>4</nature>
         </field-data>
+        <field-data>
+          <fieldName>viewRecommendation</fieldName>
+          <fact>
+            <type>ViewRecommendation</type>
+            <fieldData>
+              <field-data>
+                <name>viewName</name>
+                <value>test view name</value>
+                <nature>4</nature>
+              </field-data>
+            </fieldData>
+          </fact>
+        </field-data>
       </fieldData>
       <name>fact_project</name>
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>13</executionTimeResult>
-      <numberOfRulesFired>1</numberOfRulesFired>
+      <executionTimeResult>3</executionTimeResult>
+      <numberOfRulesFired>0</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
       <fieldValues/>
@@ -31,13 +44,13 @@
     </expect-fact>
     <expect-rule>
       <ruleName>view-cloudSolution</ruleName>
-      <explanation>Rule [view-cloudSolution] was activated 1 times.</explanation>
+      <explanation>Rule [view-cloudSolution] was not activated. Expected it to be activated.</explanation>
       <expectedFire>true</expectedFire>
-      <successResult>true</successResult>
-      <actualResult>1</actualResult>
+      <successResult>false</successResult>
+      <actualResult>0</actualResult>
     </expect-rule>
   </fixtures>
-  <lastRunResult>2017-06-29 14:18:55.734 UTC</lastRunResult>
+  <lastRunResult>2017-07-04 20:03:46.240 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>org.acme.recommendation_rules</packageName>
