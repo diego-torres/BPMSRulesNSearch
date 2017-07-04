@@ -20,18 +20,6 @@
       <name>fact_project</name>
       <isModify>false</isModify>
     </fact-data>
-    <fact-data>
-      <type>ViewRecommendation</type>
-      <fieldData>
-        <field-data>
-          <name>viewName</name>
-          <value>project</value>
-          <nature>4</nature>
-        </field-data>
-      </fieldData>
-      <name>view</name>
-      <isModify>false</isModify>
-    </fact-data>
     <execution-trace>
       <executionTimeResult>13</executionTimeResult>
       <numberOfRulesFired>1</numberOfRulesFired>
