@@ -8,33 +8,23 @@
       <fieldData>
         <field-data>
           <name>email</name>
-          <value>dtorresf@redhat.com</value>
+          <value>test@email.com</value>
           <nature>4</nature>
         </field-data>
         <field-data>
           <name>title</name>
-          <value>test project</value>
+          <value>test project name</value>
           <nature>4</nature>
         </field-data>
-        <field-data>
-          <fieldName>viewRecommendation</fieldName>
-          <fact>
-            <type>ViewRecommendation</type>
-            <fieldData>
-              <field-data>
-                <name>viewName</name>
-                <value>test view name</value>
-                <nature>4</nature>
-              </field-data>
-            </fieldData>
-          </fact>
-        </field-data>
       </fieldData>
-      <name>fact_project</name>
+      <name>project</name>
       <isModify>false</isModify>
     </fact-data>
+    <org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
+      <name>view-rules</name>
+    </org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
     <execution-trace>
-      <executionTimeResult>3</executionTimeResult>
+      <executionTimeResult>1</executionTimeResult>
       <numberOfRulesFired>0</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
@@ -50,7 +40,7 @@
       <actualResult>0</actualResult>
     </expect-rule>
   </fixtures>
-  <lastRunResult>2017-07-04 20:03:46.240 UTC</lastRunResult>
+  <lastRunResult>2017-07-04 20:05:38.669 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>org.acme.recommendation_rules</packageName>
