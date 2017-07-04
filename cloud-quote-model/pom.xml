@@ -14,5 +14,11 @@
 			<version>1.0.2</version>
 		</dependency>
 
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<version>4.3.6.Final</version>
+			<scope>provided</scope>
+		</dependency>
 	</dependencies>
 </project>

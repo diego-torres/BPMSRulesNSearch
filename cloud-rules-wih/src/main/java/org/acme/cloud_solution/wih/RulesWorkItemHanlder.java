@@ -84,7 +84,6 @@ public class RulesWorkItemHanlder implements WorkItemHandler, Cacheable {
 	}
 
 	public void abortWorkItem(WorkItem workItem, WorkItemManager manager) {
-		// TODO Auto-generated method stub
 
 	}
 
