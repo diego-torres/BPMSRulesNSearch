@@ -9,10 +9,10 @@ rule "view-cloudSolution"
 	no-loop true
 	enabled true
 	when
-		$project : Project( cloudSolution == null, $view: viewRecommendation )
+		$project : Project( cloudSolution == null, $view: viewRecommendation != null )
 	then
 		modify( $view ) {
-				setViewName( "projects/" + project.id + "/cloud" )
+				setViewName( "projects/" + $project.id + "/cloud" )
 		};
 		modify( $project ) {
 				setInformationCompleted( false )

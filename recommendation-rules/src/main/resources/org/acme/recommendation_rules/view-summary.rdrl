@@ -13,13 +13,13 @@ rule "view-summary"
 	enabled true
 	when
 		$project : Project(
-			cloudSolution != null,
-			hasCloudSolution == false || (cloudSolution.hasDataIngestion == true && dataIngestion != null),
-			hasDataVisualization == false || (hasDataVisualization == true && dataVisualization != null),
+			$cloudSolution: cloudSolution != null,
+			$cloudSolution.hasDataIngestion == false ||  dataIngestion != null,
+			$cloudSolution.hasDataVisualization == false || dataVisualization != null,
 			$view: viewRecommendation )
 	then
 		modify( $view ) {
-				setViewName( "projects/" + project.id + "/summary" )
+				setViewName( "projects/" + $project.id + "/summary" )
 		};
 		modify( $project ) {
 				setInformationCompleted( true )

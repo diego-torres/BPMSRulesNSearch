@@ -12,13 +12,14 @@ rule "view-dataVisualization"
 	enabled true
 	when
 		$project : Project(
-			cloudSolution != null,
-			cloudSolution.hasDataVisualization == true,
-			dataVisualization == null, 
+			$cloudSolution: cloudSolution != null,
+			$cloudSolution.hasDataVisualization == true,
+			dataVisualization == null,
+			$cloudSolution.hasDataIngestion == false || dataIngestion != null,
 			$view: viewRecommendation )
 	then
 		modify( $view ) {
-				setViewName( "projects/" + project.id + "/dataVisualization" )
+				setViewName( "projects/" + $project.id + "/dataVisualization" )
 		};
 		modify( $project ) {
 				setInformationCompleted( false )

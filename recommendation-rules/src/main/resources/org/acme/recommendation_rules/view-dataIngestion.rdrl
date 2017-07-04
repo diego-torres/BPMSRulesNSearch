@@ -12,14 +12,14 @@ rule "view-dataIngestion"
 	enabled true
 	when
 		$project : Project(
-			cloudSolution != null,
-			cloudSolution.hasDataIngestion == true,
+			$cloudSolution: cloudSolution != null,
+			$cloudSolution.hasDataIngestion == true,
 			dataIngestion == null,
-			hasDataVisualization == false || (hasDataVisualization == true && dataVisualization != null),
+			dataVisualization == null,
 			$view: viewRecommendation )
 	then
 		modify( $view ) {
-				setViewName( "projects/" + project.id + "/dataVisualization" )
+				setViewName( "projects/" + $project.id + "/dataVisualization" )
 		};
 		modify( $project ) {
 				setInformationCompleted( false )
