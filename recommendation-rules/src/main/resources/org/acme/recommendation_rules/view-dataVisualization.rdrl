@@ -11,15 +11,16 @@ rule "view-dataVisualization"
 	ruleflow-group "view-rules"
 	enabled true
 	when
-		project : Project( )
-		cloudSolution : CloudSolution( hasDataVisualization == true )
-		not (DataVisualization( )) 
+		$project : Project(
+			cloudSolution != null,
+			cloudSolution.hasDataVisualization == true,
+			dataVisualization == null, 
+			$view: viewRecommendation )
 	then
-		ViewRecommendation view = new ViewRecommendation();
-		view.setRecommendation( "Please enter information about data visualization tool" );
-		view.setViewName( "projects/" + project.id + "/dataVisualization" );
-		insert( view );
-		modify( project ) {
+		modify( $view ) {
+				setViewName( "projects/" + project.id + "/dataVisualization" )
+		};
+		modify( $project ) {
 				setInformationCompleted( false )
 		}
 end

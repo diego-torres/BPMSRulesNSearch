@@ -1,7 +1,6 @@
 package org.acme.recommendation_rules;
 
 import org.acme.cloud_solution_projects.Project;
-import org.acme.cloud_solution_projects.CloudSolution;
 import org.acme.cloud_solution_projects.ViewRecommendation;
 
 rule "view-cloudSolution"
@@ -10,13 +9,12 @@ rule "view-cloudSolution"
 	no-loop true
 	enabled true
 	when
-		project : Project( title != null )
-		not (CloudSolution( )) 
+		$project : Project( cloudSolution == null, $view: viewRecommendation )
 	then
-		modify( project ) {
+		modify( $view ) {
+				setViewName( "projects/" + project.id + "/cloud" )
+		};
+		modify( $project ) {
 				setInformationCompleted( false )
 		}
-		ViewRecommendation view = new ViewRecommendation();
-		view.setViewName( "projects/" + project.id + "/cloud" );
-		insert( view );
 end

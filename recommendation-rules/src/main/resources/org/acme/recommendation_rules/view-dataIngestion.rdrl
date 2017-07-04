@@ -11,15 +11,17 @@ rule "view-dataIngestion"
 	no-loop true
 	enabled true
 	when
-		cloudSolution : CloudSolution( hasDataIngestion == true )
-		project : Project( )
-		not (DataIngestion( )) 
+		$project : Project(
+			cloudSolution != null,
+			cloudSolution.hasDataIngestion == true,
+			dataIngestion == null,
+			hasDataVisualization == false || (hasDataVisualization == true && dataVisualization != null),
+			$view: viewRecommendation )
 	then
-		ViewRecommendation view = new ViewRecommendation();
-		view.setRecommendation( "Please enter the Data Ingestion Details" );
-		view.setViewName( "projects/" + project.id + "/dataIngestion" );
-		insert( view );
-		modify( project ) {
+		modify( $view ) {
+				setViewName( "projects/" + project.id + "/dataVisualization" )
+		};
+		modify( $project ) {
 				setInformationCompleted( false )
 		}
 end
