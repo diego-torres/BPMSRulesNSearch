@@ -24,23 +24,32 @@
       <name>view-rules</name>
     </org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
     <execution-trace>
-      <executionTimeResult>1</executionTimeResult>
-      <numberOfRulesFired>0</numberOfRulesFired>
+      <executionTimeResult>2</executionTimeResult>
+      <numberOfRulesFired>1</numberOfRulesFired>
     </execution-trace>
-    <expect-fact>
-      <fieldValues/>
-      <name>ViewRecommendation</name>
-      <anonymous>true</anonymous>
-    </expect-fact>
     <expect-rule>
       <ruleName>view-cloudSolution</ruleName>
-      <explanation>Rule [view-cloudSolution] was not activated. Expected it to be activated.</explanation>
+      <explanation>Rule [view-cloudSolution] was activated 1 times.</explanation>
       <expectedFire>true</expectedFire>
-      <successResult>false</successResult>
-      <actualResult>0</actualResult>
+      <successResult>true</successResult>
+      <actualResult>1</actualResult>
     </expect-rule>
+    <expect-fact>
+      <fieldValues>
+        <expect-field>
+          <fieldName>viewRecommendation</fieldName>
+          <expected>null</expected>
+          <successResult>true</successResult>
+          <explanation>[project] field [viewRecommendation] was not [null].</explanation>
+          <operator>!=</operator>
+          <nature>1</nature>
+        </expect-field>
+      </fieldValues>
+      <name>project</name>
+      <anonymous>false</anonymous>
+    </expect-fact>
   </fixtures>
-  <lastRunResult>2017-07-04 20:05:38.669 UTC</lastRunResult>
+  <lastRunResult>2017-07-04 20:22:37.176 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>org.acme.recommendation_rules</packageName>
