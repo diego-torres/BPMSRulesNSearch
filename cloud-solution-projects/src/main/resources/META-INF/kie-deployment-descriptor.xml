@@ -28,6 +28,7 @@
     <required-roles/>
     <remoteable-classes>
         <remoteable-class>org.acme.cloud_solution_projects.ViewRecommendation</remoteable-class>
+        <remoteable-class>org.acme.cloud_solution_projects.Project</remoteable-class>
     </remoteable-classes>
     <limit-serialization-classes>true</limit-serialization-classes>
 </deployment-descriptor>
