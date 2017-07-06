@@ -18,10 +18,9 @@ rule "view-dataVisualization"
 			$cloudSolution.hasDataIngestion == false || dataIngestion != null,
 			$view: viewRecommendation )
 	then
-		modify( $view ) {
-				setViewName( "projects/" + $project.id + "/dataVisualization" )
-		};
+		$view.setViewName( "projects/" + $project.id + "/dataVisualization" );
 		modify( $project ) {
-				setInformationCompleted( false )
+				setInformationCompleted( false ),
+				setViewRecommendation( $view )
 		}
 end

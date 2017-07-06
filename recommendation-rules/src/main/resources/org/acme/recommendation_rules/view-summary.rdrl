@@ -18,10 +18,9 @@ rule "view-summary"
 			$cloudSolution.hasDataVisualization == false || dataVisualization != null,
 			$view: viewRecommendation )
 	then
-		modify( $view ) {
-				setViewName( "projects/" + $project.id + "/summary" )
-		};
+		$view.setViewName( "projects/" + $project.id + "/summary" );
 		modify( $project ) {
-				setInformationCompleted( true )
+				setInformationCompleted( true ),
+				setViewRecommendation( $view )
 		}
 end
