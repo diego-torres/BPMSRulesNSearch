@@ -3,13 +3,9 @@ package org.acme.cloud_solution_projects;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
-import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.OneToOne;
 import javax.persistence.PrimaryKeyJoinColumn;
-
-import org.hibernate.annotations.GenericGenerator;
-import org.hibernate.annotations.Parameter;
 
 @Entity
 public class DataIngestion implements java.io.Serializable {
@@ -26,9 +22,7 @@ public class DataIngestion implements java.io.Serializable {
 	public DataIngestion() {
 	}
 
-	@GenericGenerator(name = "generator", strategy = "foreign", parameters = @Parameter(name = "property", value = "project"))
 	@Id
-	@GeneratedValue(generator = "generator")
 	@Column(name = "project_id", unique = true, nullable = false)
 	public Long getProjectId() {
 		return this.projectId;
@@ -41,7 +35,9 @@ public class DataIngestion implements java.io.Serializable {
 	@OneToOne(fetch = FetchType.LAZY)
 	@PrimaryKeyJoinColumn
 	public Project getProject() {
-		return project;
+		Project clone = new Project();
+		clone.setId(project == null ? 0 : project.getId());
+		return clone;
 	}
 
 	public void setProject(Project project) {

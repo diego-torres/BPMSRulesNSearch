@@ -13,6 +13,7 @@
       <groupId>org.acme.cloud-solution</groupId>
       <artifactId>cloud-solution-dto</artifactId>
       <version>1.0</version>
+      <scope>provided</scope>
     </dependency>
   </dependencies>
   <repositories>

@@ -3,15 +3,15 @@ package org.acme.cloud_solution_projects;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
-import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.OneToOne;
 import javax.persistence.PrimaryKeyJoinColumn;
 
-import org.hibernate.annotations.GenericGenerator;
-import org.hibernate.annotations.Parameter;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @Entity
+@JsonIgnoreProperties({ "hibernateLazyInitializer", "handler" })
 public class CloudSolution implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
@@ -21,15 +21,13 @@ public class CloudSolution implements java.io.Serializable {
 	private String locationCountry;
 	private Boolean hasDataVisualization;
 	private Boolean hasDataIngestion;
-	
+
 	private Project project;
 
 	public CloudSolution() {
 	}
 
-	@GenericGenerator(name = "generator", strategy = "foreign", parameters = @Parameter(name = "property", value = "project"))
 	@Id
-	@GeneratedValue(generator = "generator")
 	@Column(name = "project_id", unique = true, nullable = false)
 	public Long getProjectId() {
 		return projectId;
@@ -77,8 +75,11 @@ public class CloudSolution implements java.io.Serializable {
 
 	@OneToOne(fetch = FetchType.LAZY)
 	@PrimaryKeyJoinColumn
+	@JsonIgnore
 	public Project getProject() {
-		return project;
+		Project clone = new Project();
+		clone.setId(project == null ? 0 : project.getId());
+		return clone;
 	}
 
 	public void setProject(Project project) {

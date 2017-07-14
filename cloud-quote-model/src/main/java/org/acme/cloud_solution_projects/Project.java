@@ -7,6 +7,8 @@ import javax.persistence.FetchType;
 import javax.persistence.Id;
 import javax.persistence.OneToOne;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
 @Entity
 public class Project implements java.io.Serializable {
 
@@ -71,7 +73,8 @@ public class Project implements java.io.Serializable {
 		this.informationCompleted = informationCompleted;
 	}
 
-	@OneToOne(mappedBy = "project", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+	@OneToOne(mappedBy = "project", cascade = CascadeType.ALL, fetch = FetchType.EAGER, orphanRemoval=true)
+	@JsonManagedReference
 	public CloudSolution getCloudSolution() {
 		return cloudSolution;
 	}
@@ -80,21 +83,25 @@ public class Project implements java.io.Serializable {
 		this.cloudSolution = cloudSolution;
 	}
 
-	@OneToOne(fetch = FetchType.EAGER, mappedBy = "project", cascade = CascadeType.ALL)
+	@OneToOne(fetch = FetchType.EAGER, mappedBy = "project", cascade = CascadeType.ALL, orphanRemoval=true)
 	public DataIngestion getDataIngestion() {
 		return dataIngestion;
 	}
 
 	public void setDataIngestion(DataIngestion dataIngestion) {
+		if (dataIngestion != null)
+			dataIngestion.setProject(this);
 		this.dataIngestion = dataIngestion;
 	}
 
-	@OneToOne(fetch = FetchType.EAGER, mappedBy = "project", cascade = CascadeType.ALL)
+	@OneToOne(fetch = FetchType.EAGER, mappedBy = "project", cascade = CascadeType.ALL, orphanRemoval=true)
 	public DataVisualization getDataVisualization() {
 		return dataVisualization;
 	}
 
 	public void setDataVisualization(DataVisualization dataVisualization) {
+		if (dataVisualization != null)
+			dataVisualization.setProject(this);
 		this.dataVisualization = dataVisualization;
 	}
 
@@ -121,6 +128,36 @@ public class Project implements java.io.Serializable {
 				+ ", informationCompleted=" + informationCompleted + ", cloudSolution=" + cloudSolution
 				+ ", dataIngestion=" + dataIngestion + ", dataVisualization=" + dataVisualization
 				+ ", viewRecommendation=" + viewRecommendation + "]";
+	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((id == null) ? 0 : id.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj) {
+			return true;
+		}
+		if (obj == null) {
+			return false;
+		}
+		if (!(obj instanceof Project)) {
+			return false;
+		}
+		Project other = (Project) obj;
+		if (id == null) {
+			if (other.id != null) {
+				return false;
+			}
+		} else if (!id.equals(other.id)) {
+			return false;
+		}
+		return true;
 	}
 
 }
